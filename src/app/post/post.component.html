@@ -1,0 +1,15 @@
+<div *ngIf="!!post">
+  <h1>{{ post.Title }}</h1>
+  <a class="post-date d-block" [href]="post.Credits">{{ post.Credits }}</a>
+  <span class="post-date d-block mb-4">{{
+    post.created_at | date: "fullDate"
+  }}</span>
+  <div [innerHTML]="post.Content"></div>
+  <div class="text-center my-5">
+    <img
+      class="mw-100"
+      [src]="getImageURL(post.Image.url)"
+      alt="Image of {{ post.Title }}"
+    />
+  </div>
+</div>

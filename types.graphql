@@ -1,0 +1,20 @@
+query BlogSamples {
+  blogSamples {
+    id
+    Title
+    created_at
+  }
+}
+
+query BlogSample($id: ID!) {
+  blogSample(id: $id) {
+    id
+    Title
+    created_at
+    Content
+    Image {
+      url
+    }
+    Credits
+  }
+}

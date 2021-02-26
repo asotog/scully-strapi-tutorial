@@ -1,0 +1,6 @@
+<div class="post-list-item mb-4" *ngFor="let post of posts">
+  <h1 class="fw-500">
+    <a [routerLink]="['/p', post.id]">{{ post.Title }} </a>
+  </h1>
+  <span class="post-date">{{ post.created_at | date: "fullDate" }}</span>
+</div>

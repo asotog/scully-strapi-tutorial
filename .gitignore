@@ -44,3 +44,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Additional ignores
+.env
+env.*
+scully/plugins/*.js*
+scully.log
+.scully
