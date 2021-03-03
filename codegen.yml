@@ -1,5 +1,5 @@
 
-schema: http://localhost:1337/graphql
+schema: ${GRAPHQL_API_URL}
 documents: "types.graphql"
 generates:
   ./src/app/shared/graphql.gen.ts:
